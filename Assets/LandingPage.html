@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="CSS/LandingPage.css">
+</head>
+
+<body class="first-background">
+    
+    <input type="checkbox" id="close-menu" class="close-menu" aria-label="Close menu" role="button">
+    <label for="close-menu" title="Close menu" class="close-menu-label"></label>
+    
+    <aside class="menu">
+        <div class="main-content menu-content">
+            <h1><a href="#" class="text-black">PORTIFÓLIO</a></h1>
+            <nav>
+                <ul onclick="getElementById('close-menu').checked = false;">
+                    <li><a href="#home" class="text-black">HOME</a></li>
+                    <li><a href="#aboutme" class="text-black">ABOUT</a></li>
+                    <li><a href="#skills" class="text-black">SKILLS</a></li>
+                    <li><a href="#contact-page" class="text-black">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+
+    <div class="menu-spacing"></div>
+
+    <section id="home" class=" intro first-background first-image">
+        <div class="main-content intro-content">
+        <div class="intro-text">
+            <h2>Hi, i'am [YOUR NAME]</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid nesciunt dolore odit deserunt, porro eaque corrupti fuga debitis aspernatur animi delectus enim ipsam recusandae suscipit expedita obcaecati iure distinctio. Molestiae?</p>
+        </div>
+ 
+        <div class="intro-image"> <img src="IMG/logo.png" alt="Logo-Programador"></div>
+    </div>
+    </section>    
+
+    <section id="aboutme" class="mid-background first-image">
+        <div class="main-content about-me">
+            <h2>ABOUT ME</h2> <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum laudantium iste et beatae, minima cupiditate eaque ipsum, voluptatum deleniti consequatur nihil aspernatur deserunt pariatur amet itaque commodi voluptatem numquam quia?</p> <br>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non architecto in officiis deleniti voluptate nisi quam voluptas! Fugiat id dolorum blanditiis hic deleniti quisquam, vel laudantium, voluptate delectus debitis unde.</p> <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit pariatur repellat tenetur incidunt saepe, maxime, illo numquam, fugiat fugit beatae perspiciatis amet consequatur quae atque error facere. Nesciunt, accusantium sapiente.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-background first-image">
+        <div class="main-content skills-content">
+            <h2>skills</h2> <br>
+            <div class="grid-skills">
+            <article> <h3>HARD SKILLS</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, voluptate praesentium? Vel laboriosam laborum repellendus minima. Debitis officiis, natus nihil fuga ab quod iusto ipsa facilis earum odit voluptatum modi?</p> <br>
+            </article>
+            <article> <h3>SOFT SKILLS</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas natus tempora id, iusto quam autem impedit voluptatibus veniam corrupti officiis magnam suscipit similique repellendus accusantium? Nostrum quia odio suscipit vero?</p> <br>
+            </article> 
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-page" class="contact-background first-image">
+        <div class="main-content contact-form">
+            <fieldset class="form-grid">
+                <legend><h2>CONTACT ME</h2></legend>
+
+                <div class="form-group">
+                    <label for="First name">First name</label>
+                    <input type="text" id="first-name" placeholder="Your name">
+                </div>
+
+                <div class="form-group">
+                    <label for="Last name">Last name</label>
+                    <input type="text" id="last-name" placeholder="Last name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="text" id="email" placeholder="Your best email">
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit">Send message</button>
+                </div>
+            </fieldset>
+        </div>
+    </section>
+</body>
+
+</html>

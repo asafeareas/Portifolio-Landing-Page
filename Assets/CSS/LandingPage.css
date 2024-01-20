@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --gap: 3rem;
+    --gray: #808080
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+h1 {                   
+    font-size: 6rem;    
+}
+
+h2 {
+    font-size: 5.5rem;
+}
+
+h3 {
+    font-size: 5rem;
+}
+
+h4 {
+    font-size: 4.5rem;
+}
+
+h5 {
+    font-size: 4rem;
+}
+
+h6 {
+    font-size: 3.5rem;
+}
+
+.first-background {
+    background-image: url(https://getwallpapers.com/wallpaper/full/8/4/c/570886.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.mid-background {
+    background-image: url(https://www.solidbackgrounds.com/images/1920x1080/1920x1080-white-solid-color-background.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.skills-background {
+    background-image: url(https://getwallpapers.com/wallpaper/full/8/4/c/570886.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.contact-background {
+    background-image: url(https://www.solidbackgrounds.com/images/1920x1080/1920x1080-davys-grey-solid-color-background.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.main-content {
+    max-width: 120rem;
+    margin: 0 auto;   
+    padding: var(--gap);
+}
+
+.first-image {               /*A PORRA DA SECTION AQUI*/
+    min-height: 100vh;
+}
+
+.menu {
+    background-image: url(https://www.solidbackgrounds.com/images/1920x1080/1920x1080-white-solid-color-background.jpg);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+    border-bottom: 0.3rem solid var(--gray);
+}
+
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.menu h1 {
+    font-size: 2.3rem;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 2rem;
+    font-size: 1.8rem;
+    position: relative;
+}
+
+.menu ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    min-height: 0.2rem;
+}
+
+.menu-spacing {
+    min-height: 65px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.text-black {
+    color: black;
+}
+
+.intro-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--gap);
+    min-height: 100vh;
+    position: relative;
+    top: -8rem;
+}
+
+.intro-text, .intro-image {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    color: white;
+}
+
+.intro-text h2 {
+    font-size: 6rem;
+    margin-bottom: 3rem;
+    line-height: 1.2;
+}
+
+.intro-image img {
+    max-width: 100%;
+    min-height: auto;
+}
+
+.about-me {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 64rem;
+    text-align: center;
+}
+
+.skills-content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    min-height: 100vh;
+    color: white;
+    align-items: center;
+}
+
+.skills-content h2 {
+    padding: 7rem;
+}
+
+.skills-content h3 {
+    transform: rotate(4deg);
+}
+
+.grid-skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--gap);
+}
+
+.contact-form {
+    grid-column: span 2;
+}
+
+.contact-form fieldset {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--gap);
+}
+
+.form-group {
+    flex: 1 1 320px;
+}
+
+.form-group label {
+    display: block;
+}
+
+.form-group input, .form-group textarea {
+    border: none;
+    background-color: white;
+    padding: 1.2rem;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+body .full-width {
+     width: 100%;
+     flex: 1 1 100%;
+}
+
+.form-group button {
+    padding: 1.5rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.form-grid legend {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.form-grid {
+    color: white;
+}
+
+@media (max-width: 800px) {
+    .intro-content, .grid {
+      grid-template-columns: 1fr;
+    }
+
+.menu {
+    bottom: 0;
+    text-align: center;
+}
+
+.menu-content, .menu-content ul {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu-content {
+    height: 100vh;
+}
+
+.menu {
+    display: none;
+}
+
+.close-menu {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+
+.close-menu-label::after {
+    content: '☰';
+    position: fixed;
+    z-index: 2;
+    top: 2rem;
+    right: 2rem;
+    background-color: gray;
+    color: white;
+    font-size: 3rem;
+    line-height: 3rem;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.close-menu:checked~.menu {
+    display: block;
+}
+
+.close-menu:checked~.close-menu-label::after {
+    content: '×';
+}
+
+.close-menu {
+    display: none;
+}
